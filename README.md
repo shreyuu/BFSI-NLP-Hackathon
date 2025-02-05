@@ -1,27 +1,39 @@
 # BFSI Sentiment Analysis with NLP and Generative AI
 
-This repository contains code for a hackathon project aimed at predicting sentiment for financial news headlines using natural language processing (NLP) techniques and Generative AI models.
+This repository contains code for sentiment analysis of financial news headlines using NLP techniques and Generative AI models.
 
 ## Problem Statement
 
-The task is to develop a solution to predict sentiment for financial news headlines using NLP and Generative AI techniques. The primary goal is to accurately classify the sentiment of headlines as positive, negative, or neutral.
+The project aims to predict sentiment for BFSI (Banking, Financial Services, and Insurance) sector news headlines using Natural Language Processing and Generative AI. The sentiment is classified into three categories: positive, negative, or neutral.
 
 ## Dataset
 
-The training dataset (`train.csv`) contains news headlines along with their sentiment labels.
+The project uses two main data files:
+- [train.csv](train.csv): Primary training dataset containing news headlines with sentiment labels
+- [train.xlsx](train.xlsx): Excel version of the training data
+- [tweets](tweets): Directory containing additional tweet data for analysis
 
 ## Code Structure
 
-- `main.ipynb`: Jupyter Notebook containing the code implementation.
-- `train.csv`: Training data file containing news headlines and their sentiment labels.
+- [main.ipynb](main.ipynb): Jupyter Notebook with the complete implementation including:
+  - Data preprocessing
+  - EDA (Exploratory Data Analysis)
+  - Model training and evaluation
+  - Sentiment prediction
 
-## Libraries Used
+## Libraries Required
 
-- pandas: For data manipulation and analysis.
-- matplotlib: For data visualization.
-- NLTK: For natural language processing tasks.
-- wordcloud: For generating word clouds.
-- scikit-learn: For machine learning tasks.
+```bash
+pandas
+matplotlib
+nltk
+wordcloud
+scikit-learn
+numpy
+seaborn
+transformers
+torch
+```
 
 ## Usage
 
